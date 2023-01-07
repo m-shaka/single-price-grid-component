@@ -1,0 +1,142 @@
+body {
+    font-family: Karla;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: rgb(230, 239, 246);
+}
+
+main {
+    width: 635px;
+    height: 475px;
+    margin: 0 auto;
+    margin-top: 163px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "a a" "b c";
+    overflow: hidden;
+}
+
+.join {
+    padding: 40px 40px;
+    grid-area: a;
+}
+
+.join .join-title {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.3px;
+    margin-bottom: 24px;
+}
+
+.join .join-desc-heading {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 11px;
+}
+
+.join .join-desc {
+    font-size: 16px;
+    color: hsl(218, 22%, 67%);
+    line-height: 2;
+}
+
+.subscription {
+    padding: 40px 40px;
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    grid-area: b;
+}
+
+.subscription > h1 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.subscription .price {
+    vertical-align: middle;
+    margin-bottom: 4px;
+}
+.subscription .price > strong {
+    font-size: 32px;
+    font-weight: 700;
+    margin-right: 11px;
+}
+
+.subscription .price-note {
+    color: white;
+    opacity: 0.5;
+    font-size: 16px;
+}
+.subscription > p {
+    margin-bottom: 26px;
+}
+
+.sign-up {
+    background-color: hsl(71, 73%, 54%);
+    width: 100%;
+    border: 0px;
+    border-radius: 5px;
+    height: 45px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.why-us {
+    background-color: rgb(74, 190, 189);
+    padding: 40px 40px;
+    grid-area: c;
+    color: white;
+}
+.why-us > h1 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.why-us > ul {
+    list-style: none;
+}
+
+.why-us  li {
+    opacity: 0.75;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media screen and (min-width: 375px) and (max-width:768px) {
+    main {
+        width: 311px;
+        height: 100%;
+        margin-top: 72px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 267px repeat(2, 227px);
+        grid-template-areas: "a" "b" "c";
+    }
+
+    .join {
+        padding: 28px 24px;
+    }
+    .join .join-desc {
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    .subscription {
+        padding: 24px;
+    }
+
+    .why-us {
+        padding: 24px;
+    }
+    
+}
